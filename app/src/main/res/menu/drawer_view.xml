@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_profile"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/points_store"
+            android:title="@string/points_store" />
+        <item
+            android:id="@+id/messages"
+            android:title="@string/messages" />
+        <item
+            android:id="@+id/permission_requests"
+            android:title="@string/permission_requests" />
+        <item
+            android:id="@+id/parent_dashboard"
+            android:title="@string/parent_dashboard" />
+        <item
+            android:id="@+id/my_groups"
+            android:title="@string/my_groups" />
+        <item
+            android:id="@+id/users_monitoring_me"
+            android:title="@string/users_monitoring_me" />
+        <item
+            android:id="@+id/users_I_monitor"
+            android:title="@string/users_I_monitor" />
+        <item
+            android:id="@+id/leaderboard"
+            android:title="@string/leaderboard" />
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f55b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#019eff</color>
+    <color name="colorLoginBackground">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0004</color>
+    <color name="green">#26ff00</color>
+    <color name="darkGreen">#297126</color>
+    <color name="greenAccent">#3bdf34</color>
+    <color name="gold">#fadf10</color>
+    <color name="darkGold">#ac890c</color>
+    <color name="goldAccent">#f9c406</color>
+
+</resources>

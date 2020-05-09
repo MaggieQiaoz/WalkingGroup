@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/unread_messages"
+        android:icon="@drawable/ic_mail_black_24dp"
+        android:title="Cart"
+        app:actionLayout="@layout/unread_messages_icon_layout"
+        app:showAsAction="always" />
+</menu>

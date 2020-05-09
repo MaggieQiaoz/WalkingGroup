@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jade.sfu.walkinggroup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/walkingschoolbuslogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".app.SelectMapLocationActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.CreateNewGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MapActivity" />
+        <activity
+            android:name=".app.LoginActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.SignupActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".app.CreateNewGroupActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.MonitoringMeActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.MainMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.MonitoringOthersActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.MainMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.CurrentGroupsActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.MainMapActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".app.MainMapActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ParentDashboardActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.MessagesActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.ViewProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ViewProfileActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.MainMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.EditProfileActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.ViewProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ReadOnlyMonitoringMeActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ViewOnlyProfileActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.ReadOnlyMonitoringMeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.GroupsOfMonitoredUsersActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.DisplayMembersOfGroupActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.MessagesFromUserActivity"
+            android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".app.MessagesActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".app.PointsStoreActivity" />
+        <activity android:name=".app.LeaderboardActivity" />
+        <activity android:name=".app.PermissionRequestsActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.CreateNewGroupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/create_new_group_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/meetAtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_alignBaseline="@+id/meetingPlaceEditText"
+        android:layout_alignStart="@+id/create_new_group_toolbar"
+        android:text="@string/meetAt"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/walkingToTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_alignBaseline="@+id/locationEditText"
+        android:layout_alignStart="@+id/create_new_group_toolbar"
+        android:text="@string/walkingTo"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/groupNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/create_new_group_toolbar"
+        android:layout_marginTop="82dp"
+        android:text="@string/groupName"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/groupNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/groupNameTextView"
+        android:layout_toEndOf="@+id/groupNameTextView"
+        android:layout_toRightOf="@+id/groupNameTextView"
+        android:ems="10"
+        android:hint="@string/groupNameHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="183dp"
+        android:layout_toEndOf="@+id/groupNameTextView"
+        android:layout_toRightOf="@+id/walkingToTextView"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="@string/walkingToHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/meetingPlaceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="128dp"
+        android:layout_toEndOf="@+id/groupNameTextView"
+        android:layout_toRightOf="@+id/meetAtTextView"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="@string/meetAtHint"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/cancelNewGroupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="242dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/createNewGroupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/groupNameTextView"
+        android:layout_alignTop="@+id/cancelNewGroupButton"
+        android:text="@string/create" />
+</RelativeLayout>
